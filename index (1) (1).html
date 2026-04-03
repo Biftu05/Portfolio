@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biftu Tilahun</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- -----------Header------------ -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.ln.jpg" class="logo" alt="Logo">
+                <!-- Desktop Menu -->
+    <ul class="nav-list desktop-menu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+ 
+    </ul>
+
+    <!-- Mobile Menu -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="nav-list mobile-menu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+                
+            </nav>
+
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Biftu Tilahun</span><br>from Ethiopia</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------About------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="user.jpg" alt="User Image">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p>
+                        I'm a frontend developer. I started learning coding and website designing this year.
+                        Even though I have taken a computer course before, I have already created a static website.
+                        Now I'm on my way to building a fully dynamic website.
+                        Currently, I am a frontend developer, but next year I plan to become a backend developer as well.
+                        I believe with hard work everything is possible.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span></li>
+                            <li><span>E-commerce Website Designing</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2026 - Present<br>Still learning</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Frontend Development Training</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------services------------ -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+     <div class="services-list">
+         <div>
+            <h2>Frontend Design</h2>
+            <p> I have designed a frontend of many websites </p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <h2>web Design</h2>
+            <p> I have designed an E-commerce website <br>which is called Nova Store </p>
+            <a href="#">Learn more</a>
+        </div>
+         <div>
+            <h2>App Design</h2>
+            <p> I have designed an app and<br> I will continue to in future </p>
+            <a href="#">Learn more</a>
+         </div>
+     </div>
+        </div>
+     </div>
+     <!-- -----------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="fronthend.np.jpg">
+                <div class="layer">
+
+                <h3>Frontend design</h3>
+                <p>one of an amazing frontend design</p>
+                </div>
+            </div>
+             <div class="work">
+                <img src="ecommerce.png">
+                <div class="layer">
+
+                <h3>E-commerce website</h3>
+                <p>It's called Nova Store</p>
+                </div>
+            </div>
+             <div class="work">
+                <img src="moile.in.jpg">
+                <div class="layer">
+
+                <h3>Social Media App </h3>
+                <p>the app connects people around the world</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+   <!-- -----------contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                 <h1 class="sub-title"> Contact Me</h1>
+                 <p>biftutilahun05@gmail.com</p>
+                 <p>0967056760</p>
+                
+                </div>
+                <div class="contact-right">
+                    <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn ">Submit</button>
+                    </form>
+                </div>
+                
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>@created by Biftu Tilahun</p>
+        </div>
+    </div>
+    
+   
+   <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>  
+      <script>
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+});
+</script>
+
+
+</body>
+</html>
