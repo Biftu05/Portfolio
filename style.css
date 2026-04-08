@@ -370,7 +370,10 @@ form .btn{
     cursor: pointer;
     gap: 4px;
 }
-
+.nav-list desktop-menu{
+	top:0;
+	right:0;
+}
 .hamburger span {
     display: block;
     height: 3px;
