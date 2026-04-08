@@ -363,60 +363,56 @@ form .btn{
 }
 
 /* Mobile Menu hidden by default */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 4px;
-}
 
-.hamburger span {
-    display: block;
-    height: 3px;
-    width: 25px;
-    background: #fff;
-}
-
-.mobile-menu {
-    display: none; /* hidden initially */
-    list-style: none;
-    position: absolute;
-    top: 60px;  /* below navbar */
-    left: 0;
-    width: 100%;
-    background: #333;
-}
-
-.mobile-menu li {
-    border-bottom: 1px solid #444;
-}
-
-.mobile-menu li a {
-    display: block;
-    padding: 12px 20px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.mobile-menu li a:hover {
-    background: #575757;
-}
-
-/* ---------- Responsive ---------- */
-@media (max-width: 768px) {
-    /* Hide desktop menu */
-    .desktop-menu {
+      .nav-checkbox,
+      .nav-burger {
         display: none;
-    }
+      }
 
-    /* Show hamburger */
-    .hamburger {
-        display: flex;
-    }
+      @media (max-width: 768px) {
+        .nav-burger {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          cursor: pointer;
+        }
 
-    /* Show mobile menu when active */
-    .mobile-menu.active {
-        display: block;
-    }
-}
+        .nav-burger span {
+          display: block;
+          width: 25px;
+          height: 2px;
+          background: var(--text-main);
+          transition: var(--transition);
+        }
+
+        .nav-links {
+          position: fixed;
+          top: 70px; /* Adjust based on nav height */
+          left: -100%; /* Hide off-screen */
+          flex-direction: column;
+          background: #1e293b; /* Solid dark for mobile dropdown */
+          width: 100%;
+          height: calc(100vh - 70px);
+          padding: 3rem 0;
+          text-align: center;
+          transition: 0.4s ease-in-out;
+        }
+
+        /* Slide menu in when checkbox is checked */
+        .nav-checkbox:checked ~ .nav-links {
+          left: 0;
+        }
+
+        /* Burger Animation to 'X' when menu is open */
+        .nav-checkbox:checked ~ .nav-burger span:nth-child(1) {
+          transform: translateY(7px) rotate(45deg);
+        }
+        .nav-checkbox:checked ~ .nav-burger span:nth-child(2) {
+          opacity: 0;
+        }
+        .nav-checkbox:checked ~ .nav-burger span:nth-child(3) {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+      }
+
 
