@@ -407,8 +407,8 @@ nav .fa-solid{
     width: 25px;
     background: #fff;
 }
-
-.mobile-menu {
+*/
+/*  .mobile-menu {
     display: none; /* hidden initially */
     list-style: none;
     position: absolute;
@@ -417,8 +417,8 @@ nav .fa-solid{
     width: 100%;
     background: #333;
 }
-
-.mobile-menu li {
+*/
+/*  .mobile-menu li {
     border-bottom: 1px solid #444;
 }
 
@@ -432,9 +432,9 @@ nav .fa-solid{
 .mobile-menu li a:hover {
     background: #575757;
 }
-
+*/
 /* ---------- Responsive ---------- */
-@media (max-width: 768px) {
+/*  @media (max-width: 768px) {
     /* Hide desktop menu */
     .desktop-menu {
         display: none;
