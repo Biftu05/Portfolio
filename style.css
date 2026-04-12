@@ -344,6 +344,7 @@ nav .fa-solid{
 		height: 100vh;
 		padding-top: 50px;
 		z-index: 2;
+		transition: right 0.5s
 	}
 	nav ul li{
 		display: block;
@@ -390,7 +391,7 @@ nav .fa-solid{
 
 /* Mobile Menu hidden by default */
 
-    .hamburger {
+ /*   .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -448,4 +449,4 @@ nav .fa-solid{
     .mobile-menu.active {
         display: block;
     }
-}
+}*/
