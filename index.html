@@ -15,15 +15,15 @@
             <nav>
                 <img src="logo.ln.jpg" class="logo" alt="Logo">
                 <!-- Desktop Menu -->
-    <ul class="nav-list desktop-menu">
+    <ul id="sidemenu">
         <li><a href="#header">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
- <i class="fa-solid fa-xmark"></i>
+ <i class="fa-solid fa-xmark" onclick="closemenu"()></i>
     </ul>
-<i class="fa-solid fa-bars"></i>
+<i class="fa-solid fa-bars" onclick="openmenu"()></i>
     <!-- Mobile Menu -->
     <div class="hamburger" id="hamburger">
         <span></span>
@@ -206,7 +206,16 @@ hamburger.addEventListener('click', () => {
     mobileMenu.classList.toggle('active');
 });
 </script>
+<script>
+    var sidemenu = document.getElementByID("sidemenu");
 
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style. = "-200px";
+    }
+</script>
 
 </body>
 </html>
