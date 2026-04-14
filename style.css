@@ -288,9 +288,7 @@ form .btn{
 }
 
 /* -----------CSS for small screens----------- */
-nav .fa-solid{
-	display: none;
-}
+
 @media only screen and (max-width: 768px){
 #header {
   width: 100%;
@@ -331,31 +329,7 @@ nav .fa-solid{
   .contact-right{
     font-size: 14px;
   }
-	nav .fa-solid{
-		display: block;
-		font-size: 25px;
-	}
-	nav ul{
-		background: #ff004f;
-		position: fixed;
-		top: 0;
-		right: -200px;
-		width 200px
-		height: 100vh;
-		padding-top: 50px;
-		z-index: 2;
-		transition: right 0.5s
-	}
-	nav ul li{
-		display: block;
-		margin: 25px;
-	}
-	nav ul .fa-solid{
-		position: absolute;
-		top: 25px;
-		left: 25px;
-		cursor: pointer;
-	}
+	
 }
 /* Basic nav styles */
 .navbar {
@@ -391,7 +365,7 @@ nav .fa-solid{
 
 /* Mobile Menu hidden by default */
 
- /*   .hamburger {
+    .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -407,8 +381,8 @@ nav .fa-solid{
     width: 25px;
     background: #fff;
 }
-*/
-/*  .mobile-menu {
+
+   .mobile-menu {
     display: none; /* hidden initially */
     list-style: none;
     position: absolute;
@@ -417,8 +391,7 @@ nav .fa-solid{
     width: 100%;
     background: #333;
 }
-*/
-/*  .mobile-menu li {
+  .mobile-menu li {
     border-bottom: 1px solid #444;
 }
 
@@ -432,9 +405,9 @@ nav .fa-solid{
 .mobile-menu li a:hover {
     background: #575757;
 }
-*/
+
 /* ---------- Responsive ---------- */
-/*  @media (max-width: 768px) {
+  @media (max-width: 768px) {
     /* Hide desktop menu */
     .desktop-menu {
         display: none;
@@ -449,4 +422,4 @@ nav .fa-solid{
     .mobile-menu.active {
         display: block;
     }
-}*/
+}
