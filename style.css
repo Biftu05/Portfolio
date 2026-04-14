@@ -411,7 +411,7 @@ form .btn{
   @media (max-width: 768px) {
     /* Hide desktop menu */
     .desktop-menu {
-        display: none;
+        display: block;
     }
 
     /* Show hamburger */
