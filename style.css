@@ -380,13 +380,14 @@ form .btn{
     height: 3px;
     width: 25px;
     background: #fff;
+	top:0;
 }
 
    .mobile-menu {
     display: none; /* hidden initially */
     list-style: none;
     position: absolute;
-    top: 0px;  /* below navbar */
+    top: 60px;  /* below navbar */
     left: 0;
     width: 100%;
     background: #333;
