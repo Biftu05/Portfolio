@@ -386,7 +386,7 @@ form .btn{
     display: none; /* hidden initially */
     list-style: none;
     position: absolute;
-    top: 60px;  /* below navbar */
+    top: 0px;  /* below navbar */
     left: 0;
     width: 100%;
     background: #333;
