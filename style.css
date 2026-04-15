@@ -410,10 +410,11 @@ form .btn{
 /* ---------- Responsive ---------- */
  /* @media (max-width: 768px) {
     /* Hide desktop menu */
+@media (max-width: 600px) {
     .desktop-menu {
         display: none;
     }
-
+}
     /* Show hamburger */
    /* .hamburger {
         display: flex;
