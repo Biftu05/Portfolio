@@ -365,7 +365,7 @@ form .btn{
 
 /* Mobile Menu hidden by default */
 
-    .hamburger {
+  /*  .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -382,8 +382,8 @@ form .btn{
     background: #fff;
 	
 }
-
-   .mobile-menu {
+*/
+  /* .mobile-menu {
     display: none; /* hidden initially */
     list-style: none;
     position: absolute;
@@ -395,8 +395,8 @@ form .btn{
   .mobile-menu li {
     border-bottom: 1px solid #444;
 }
-
-.mobile-menu li a {
+*/
+/*.mobile-menu li a {
     display: block;
     padding: 12px 20px;
     color: #fff;
@@ -406,9 +406,9 @@ form .btn{
 .mobile-menu li a:hover {
     background: #575757;
 }
-
+*/
 /* ---------- Responsive ---------- */
-  @media (max-width: 768px) {
+ /* @media (max-width: 768px) {
     /* Hide desktop menu */
     .desktop-menu {
         display: block;
@@ -424,3 +424,4 @@ form .btn{
         display: block;
     }
 }
+*/
