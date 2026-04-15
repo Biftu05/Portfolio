@@ -23,7 +23,7 @@
         <li><a href="#contact">Contact</a></li>
 
     </ul>
-
+<!--
     <!-- Mobile Menu -->
    <div class="hamburger" id="hamburger">
         <span></span>
@@ -37,9 +37,114 @@
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
- 
+ -->
 </nav>
-                
+          <style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Top bar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Menu button */
+.menu-btn {
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 20px; /* ðŸ‘ˆ moved inward */
+  display: none; /* hidden by default */
+}
+
+/* Sidebar menu */
+#menu {
+  position: fixed;
+  top: 0;
+  right: -250px; /* hidden */
+  width: 250px;
+  height: 100%;
+  background: black;
+  color: white;
+  padding-top: 60px;
+  transition: 0.3s;
+}
+
+/* Menu links */
+#menu a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  background: gray;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* âœ… SHOW ONLY ON SMALL SCREENS */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* âœ… HIDE MENU ON LARGE SCREENS */
+@media (min-width: 769px) {
+  #menu {
+    display: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">B</div>
+  <div class="menu-btn" onclick="openMenu()">â˜°</div>
+</header>
+
+<div id="menu">
+  <div class="close" onclick="closeMenu()">âœ–</div>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Contact</a>
+</div>
+
+<script>
+function openMenu() {
+  document.getElementById("menu").style.right = "0";
+}
+
+function closeMenu() {
+  document.getElementById("menu").style.right = "-250px";
+}
+</script>
+      
             </nav>
 
             <div class="header-text">
@@ -199,7 +304,7 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
       </script> 
-   
+   <!--
       <script>
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
@@ -208,7 +313,7 @@ hamburger.addEventListener('click', () => {
     mobileMenu.classList.toggle('active');
 });
 </script>
-    
+    -->
 
 </body>
 </html>
