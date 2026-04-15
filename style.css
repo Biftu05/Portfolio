@@ -385,17 +385,17 @@ form .btn{
 */
   /* .mobile-menu {
     display: none; /* hidden initially */
-    list-style: none;
+  /*  list-style: none;
     position: absolute;
     top: 60px;  /* below navbar */
-    left: 0;
+   /* left: 0;
     width: 100%;
     background: #333;
 }
   .mobile-menu li {
     border-bottom: 1px solid #444;
 }
-*/
+/*
 /*.mobile-menu li a {
     display: block;
     padding: 12px 20px;
@@ -415,12 +415,12 @@ form .btn{
     }
 
     /* Show hamburger */
-    .hamburger {
+   /* .hamburger {
         display: flex;
     }
 
     /* Show mobile menu when active */
-    .mobile-menu.active {
+   /* .mobile-menu.active {
         display: block;
     }
 }
